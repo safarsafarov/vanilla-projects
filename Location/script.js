@@ -1,5 +1,4 @@
 const button = document.querySelector("button");
-
 button.addEventListener("click", ()=>{
     if(navigator.geolocation){
         button.innerText = "Allow to detect location";
@@ -8,7 +7,7 @@ button.addEventListener("click", ()=>{
         button.innerText = "Your browser not support";
     }
 });
-
+// ON success
 function onSuccess(position){
     button.innerText = "Detecting your location...";
     let {latitude, longitude} = position.coords;
@@ -22,7 +21,7 @@ function onSuccess(position){
         button.innerText = "Something went wrong";
     });
 }
-
+// ON error
 function onError(error){
     if(error.code == 1){
         button.innerText = "You denied the request";
