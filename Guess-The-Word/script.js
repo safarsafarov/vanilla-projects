@@ -1,9 +1,9 @@
 const inputs = document.querySelector(".inputs")
 const hintTag = document.querySelector(".hint span")
-guessLeft = document.querySelector(".guess-left span")
-wrongLetter = document.querySelector(".wrong-letter span")
-resetBtn = document.querySelector(".reset-btn"),
-typingInput = document.querySelector(".typing-input");
+const guessLeft = document.querySelector(".guess-left span")
+const wrongLetter = document.querySelector(".wrong-letter span")
+const resetBtn = document.querySelector(".reset-btn")
+const typingInput = document.querySelector(".typing-input")
 
 let word, maxGuesses, incorrectLetters = [], correctLetters = [];
 
