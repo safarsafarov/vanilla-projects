@@ -1,15 +1,18 @@
 const questions = document.querySelectorAll(".question");
 
-questions.forEach(function () {
-    const btn = question.querySelector(".question-btn");
+questions.forEach(function (question) {
+  const btn = question.querySelector(".question-btn");
+  // console.log(btn);
 
-    btn.addeventListener("click", () => {
-        questions.forEach(function (time) {
-            if (item !== question) {
-                item.classList.remove("show-text")
-            }
-        });
+  btn.addEventListener("click", function () {
+    // console.log(question);
 
-        question.classList.toggle("show-text");
+    questions.forEach(function (item) {
+      if (item !== question) {
+        item.classList.remove("show-text");
+      }
     });
+
+    question.classList.toggle("show-text");
+  });
 });
