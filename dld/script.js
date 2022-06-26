@@ -1,25 +1,25 @@
-const fileInput = document.querySelector("input");
+const fileInput = document.querySelector("input"),
 downloadBtn = document.querySelector("button");
 
-downloadBtn.addeventListener("click", e => {
+downloadBtn.addEventListener("click", e => {
     e.preventDefault();
-    downloadBtn.innerText = "Downloading...";
+    downloadBtn.innerText = "Downloading file...";
     fetchFile(fileInput.value);
-})
+});
 
 function fetchFile(url) {
     fetch(url).then(res => res.blob()).then(file => {
         let tempUrl = URL.createObjectURL(file);
-        let aTag = document.createElement("a");
+        const aTag = document.createElement("a");
         aTag.href = tempUrl;
-        aTag.download = url.repplace(/^.*[\\\/]/, '');
+        aTag.download = url.replace(/^.*[\\\/]/, '');
         document.body.appendChild(aTag);
         aTag.click();
-        aTag.remove();
+        downloadBtn.innerText = "Download File";
         URL.revokeObjectURL(tempUrl);
-        downloadBtn.innerText = "Download File";
+        aTag.remove();
     }).catch(() => {
+        alert("Failed to download file!");
         downloadBtn.innerText = "Download File";
-        alert("Failed to download file!")
-    })
+    });
 }
