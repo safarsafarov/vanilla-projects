@@ -1,4 +1,6 @@
 # VANILLA PROJECTS
+<p align="center">
+
 ### DLD
 ![alt text](screenshots/1.png)
 
@@ -10,3 +12,5 @@
 
 ### Reviews
 ![alt text](screenshots/4.png)
+
+</p>
