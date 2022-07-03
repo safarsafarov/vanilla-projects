@@ -49,5 +49,16 @@ function initTyping() {
             }
             charindex++;
         }
+        characters.forEach(span => span.classList.remove("active"));
+        characters[charIndex].classList.add("active");
+
+        let wpm = Math.round(((charIndex - mistakes)  / 5) / (maxTime - timeLeft) * 60);
+        wpm = wpm < 0 || !wpm === infinity ? 0 : wpm;
+
+        wpmTag.innerText = wpm;
+        mistakeTag.innerText = mistakes;
+        cpmTag.innerText = charIndex - mistakes;
+    } else {
+        clear
     }
 }
