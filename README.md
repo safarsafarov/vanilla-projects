@@ -16,4 +16,18 @@
 ### English Dictionary
 ![alt text](screenshots/english.png)
 
+### Guess
+![alt text](screenshots/guess.png)
+
+### Memory
+![alt text](screenshots/memory.png)
+
+### Price-range
+![alt text](screenshots/price-range.png)
+
+### Reviews
+![alt text](screenshots/reviews.png)
+
+### Search
+![alt text](screenshots/searchi.png)
 </p>
