@@ -1,16 +1,19 @@
 # VANILLA PROJECTS
 <p align="center">
 
-### DLD
-![alt text](screenshots/1.png)
+### Background-color
+![alt text](screenshots/bg-col.png)
 
-### Background-changer
-![alt text](screenshots/2.png)
+### Clock
+![alt text](screenshots/clock.png)
 
 ### Counter
-![alt text](screenshots/3.png)
+![alt text](screenshots/counter.png)
 
-### Reviews
-![alt text](screenshots/4.png)
+### Currency
+![alt text](screenshots/currency.png)
+
+### English Dictionary
+![alt text](screenshots/english.png)
 
 </p>
