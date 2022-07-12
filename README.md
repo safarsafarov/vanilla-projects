@@ -29,5 +29,5 @@
 ![alt text](screenshots/reviews.png)
 
 ### Search
-![alt text](screenshots/searchi.png)
+![alt text](screenshots/search.png)
 </p>
