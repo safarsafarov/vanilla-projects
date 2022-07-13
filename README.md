@@ -30,4 +30,8 @@
 
 ### Search
 ![alt text](screenshots/search.png)
+
+### Location Detection
+![alt text](screenshots/location.png)
+
 </p>
